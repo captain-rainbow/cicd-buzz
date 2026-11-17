@@ -36,7 +36,7 @@ jobs:
         run: |
           source antenv/bin/activate
           flake8 ./buzz/generator.py ./app.py --count --select=E9,F63,F7,F82 --show-source --statistics --ignore=F821
-          flake8 ./buzz/generator.py ./app.py --count --exit-zero --max-complexity=10 --max-line-length=127 –statistics
+          flake8 ./buzz/generator.py ./app.py --count --exit-zero --max-complexity=10 --max-line-length=127 –-statistics
     
       - name: Test with pytest
         run: |
